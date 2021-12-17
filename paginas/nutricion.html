@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>NUTRICION</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,20 +13,42 @@
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body class="colorPagina">
-    <header class="header">
-        <h1>MY GYM</h1>
-        <nav class="nav">
-            <ul>
-                <li>PROGRAMAS/</li>
-                <li>SUPLEMENTOS</li>
-                <li>RESULTADOS/</li>
-                <li>PORTAL</li>
-            </ul>
-        </nav>
-    </header>
+    <header class="row">
+        <div class="col-4">
+            <h1 class="titulo">MY GYM</h1>
+        </div>
+        <div class="col-8">
+            <nav class="nav">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Programas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Suplementos</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Proteinas</a></li>
+                        <li><a class="dropdown-item" href="#">Creatina</a></li>
+                        <li><a class="dropdown-item" href="#">BBC</a></li>
+                        <li><a class="dropdown-item" href="#">Quemadores</a></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Resultados</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../paginas/registro.html" tabindex="-1" aria-disabled="true">Portal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
     <main class="portadaNutricion">
-        <div>
-            <h2>NUTRICION DEPORTIVA</h2>
+        <section class="row">
+            <div class="col-12">
+                <h2>NUTRICION DEPORTIVA</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at minima quae accusamus ex facere, 
                 nostrum ab sapiente, neque, nemo fugiat. Soluta eveniet odio quam aliquam cum necessitatibus, sequi assumenda?
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis illo totam expedita architecto in at, nostrum cupiditate perferendis alias quaera
@@ -37,51 +61,61 @@
                 t ullam soluta dolorum eligendi fugit odit dolore! Optio, asperiores nesciunt!
                 Harum tempora velit amet perferendis illum commodi eum corporis iste ipsam atque. Cum harum adipisci minima voluptatum? Illum facere, maxime accusamus facilis modi libero.
                 Voluptatem rem ratione inventore illum ipsam!</p><br>
-        </div>
-        <section class="nutri">
-            <h3>NUTRICION PARA ATLETAS</h3>
-            <div class="contenidoAtleta">
+            </div>
+        </section>
+        <section class="row">
+            <h3 class="ubih3">NUTRICION PARA ATLETAS</h3>
+            <article class="col-3">
                 <div class="contenidoAtleta_margenes">
                     <img class="imgNutri"src="../recursos/NUTRICION1.png">
                     ´<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illo eligendi tempore, ipsa corporis esse quo dolores blanditiis? Reprehenderit, ad nostrum! Expedita mollitia maxime sit, voluptate perspiciatis aut voluptates laudantium maiores.</p>
                 </div>
+            </article>
+            <article class="col-3">
                 <div class="contenidoAtleta_margenes">
                     <img class="imgNutri" src="../recursos/nutriciondeportiva21.png">
                     ´<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illo eligendi tempore, ipsa corporis esse quo dolores blanditiis? Reprehenderit, ad nostrum! Expedita mollitia maxime sit, voluptate perspiciatis aut voluptates laudantium maiores.</p>
                 </div>
+            </article>
+            <article class="col-3">
                 <div class="contenidoAtleta_margenes">
                     <img class="imgNutri" src="../recursos/nutriciondeportiva3.png">
                     ´<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illo eligendi tempore, ipsa corporis esse quo dolores blanditiis? Reprehenderit, ad nostrum! Expedita mollitia maxime sit, voluptate perspiciatis aut voluptates laudantium maiores.</p>
                 </div>
+            </article>
+            <article class="col-3">
                 <div class="contenidoAtleta_margenes">
                     <img class="imgNutri" src="../recursos/nutriciondeportiva4.png">
                     ´<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illo eligendi tempore, ipsa corporis esse quo dolores blanditiis? Reprehenderit, ad nostrum! Expedita mollitia maxime sit, voluptate perspiciatis aut voluptates laudantium maiores.</p>
                 </div>
+            </article>        
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div>
-            <p>CONTACTO</p>
-            <p>LUN A VIE DE 8 A 19</p>
-            <P>CORDODOBA ARG CP5000</P>
-            <P>support@gmial.com</P>
-        </div>
-        <div>
-            <p>siguenos</p>
-            <a href="https://www.instagram.com/?hl=es"><img src="../recursos/instagram.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/"><img src="../recursos/facebook.png" alt="facebook"></a>
-            <p>copyright 2021 Tecnoweb</p>
-        </div>
-        <div>
-            <p class="siguenos">Politica de privacidad <br>
-                Terminos de usos
-            </p>
-        </div>  
+    <footer class="footerNutricion">
+        <section class="row">
+            <div class="col-4">
+                <p>CONTACTO</p>
+                <p>LUN A VIE DE 8 A 19</p>
+                <P>CORDODOBA ARG CP5000</P>
+                <P>support@gmial.com</P>
+            </div>
+            <div class="col-4">
+                <p>siguenos</p>
+                <a  class="ubiImag" href="https://www.instagram.com/?hl=es"><img src="../recursos/instagram.png" alt="instagram"></a>
+                <a  class="ubiImag" href="https://www.facebook.com/"><img src="../recursos/facebook.png" alt="facebook"></a>
+                <p>copyright 2021 Tecnoweb</p>
+            </div>
+            <div class="col-4">
+                <p class="siguenos">Politica de privacidad <br>
+                    Terminos de usos
+                </p>
+            </div>  
+        </section>
     </footer>
 </body>
-</html>       
+</html>
