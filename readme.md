@@ -1,3 +1,3 @@
-HOLA, ES MI PRIMERA PAGINA PARA EL CURSO DE CODERHOUSE.
-FALTA TRABAJAR MAS.
-agrege bootstrap
+se agrega el link de pagina.
+
+my-gym2022.000webhostapp.com
